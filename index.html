@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div >
+        <span >Formulario</span>
+        <form action="" id="formulario">
+            
+            <div>
+                <span>ISBN</span>
+                <input  id="isbn" type="text" name="isbn">
+            </div>
+            <div >
+                <span>Fecha de Publicación</span>
+                <input  id="fecha" type="date" name="fecha">
+            </div>
+            <div>
+                <span>Nombre</span>
+                <input  id="nombre" type="text" name="nombre">
+            </div>
+            <div>
+                <span>Editorial</span>
+                <input  id="editorial" type="text" name="editorial">
+            </div>
+            <div>
+                <span>Genero</span>
+                <input  id="genero" type="text" name="genero">
+            </div>
+            <div>
+                <span>Sinopsis</span>
+                <input  id="sinopsis" type="text" name="sinopsis">
+            </div>
+            <div>
+                <span>Portada</span>
+                <input  id="portada" type="text" name="portada">
+            </div>           
+            <div>
+                <span>Precio</span>
+                <input  id="precio" type="text" name="isbn">
+            </div>
+            <div>
+                <span>Stock</span>
+                <input  id="stock" type="text" name="stock">
+            </div>
+            <div>
+                <span>Autor</span>
+                <input  id="autor" type="text" name="autor">
+            </div>
+            
+            
+            
+            
+        </form>
+        <div class="">
+            <input type="submit" id="btnEnviar" value="Enviar">
+
+        </div>
+        
+    
+    
+</div>
+
+
+
+
+</body>
+<!-- // Import the functions you need from the SDKs you need -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script src="firebase.js"></script>
+<script src="enviarJson.js"></script>
+</html>
