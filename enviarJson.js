@@ -1,28 +1,28 @@
-const isbn = document.getElementById('isbn').value;
-const fecha = document.getElementById('fecha').value;
-const nombre = document.getElementById('nombre').value;
-const editorial = document.getElementById('editorial').value;
-const genero = document.getElementById('genero').value;
-const sinopsis = document.getElementById('sinopsis').value;
-const portada = document.getElementById('portada').value;
-const precio = document.getElementById('precio').value;
-const stock = document.getElementById('stock').value;
-const autor = document.getElementById('autor').value;
+const isbn = document.getElementById('isbn');
+const fecha = document.getElementById('fecha');
+const nombre = document.getElementById('nombre');
+const editorial = document.getElementById('editorial');
+const genero = document.getElementById('genero');
+const sinopsis = document.getElementById('sinopsis');
+const portada = document.getElementById('portada');
+const precio = document.getElementById('precio');
+const stock = document.getElementById('stock');
+const autor = document.getElementById('autor');
 
 console.log(document.getElementById('isbn').value);
 btnEnviar.addEventListener('click', (e) => {
     e.preventDefault();
     db.collection("libros").add({
-        isbn: isbn,
-        fecha: fecha,
-        nombre: nombre,
-        editorial: editorial,
-        genero: genero,
-        sinopsis: sinopsis,
-        portada: portada,
-        precio: precio,
-        stock: stock,
-        autor: autor
+        isbn: isbn.value,
+        fecha: fecha.value,
+        nombre: nombre.value,
+        editorial: editorial.value,
+        genero: genero.value,
+        sinopsis: sinopsis.value,
+        portada: portada.value,
+        precio: precio.value,
+        stock: stock.value,
+        autor: autor.value
 
 })
 .then((docRef) => {
